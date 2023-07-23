@@ -1,0 +1,33 @@
+<%- include ("partials/header") %>
+
+<div class="home">
+<div class="">
+  <div class="title container">
+    <h1 class="display-4">MoviesInfo</h1>
+    <p class="lead">
+      A Website on which lands you in the details of a Movie just by searching
+      its name .
+    </p>
+    <span id="element"></span>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <form action="/" method="post">
+    <div class="input-group mb-3" style="padding-top: 20px;">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Movie Name"
+        name="movieName"
+      />
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="submit">
+          See Details
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+<%- include ("partials/footer") %>
