@@ -35,11 +35,13 @@
               <div class="rating-card card">
                 <div class="card-body">
                   <h5 class="card-title">
-                    <img
-                      class="rating-image"
-                      src="/images/imdb.png"
-                      alt="IMDB"
-                    />
+                    <a href="https://www.imdb.com/find/?q=<%=movieTitle %>">
+                      <img
+                        class="rating-image"
+                        src="/images/imdb.png"
+                        alt="IMDB"
+                      />
+                    </a>
                   </h5>
                   <p class="rating-text card-text"><%=imdbRating%></p>
                 </div>
@@ -49,11 +51,13 @@
               <div class="rating-card card">
                 <div class="card-body">
                   <h5 class="card-title">
-                    <img
-                      class="rating-image"
-                      src="/images/rotten.png"
-                      alt="IMDB"
-                    />
+                    <a href="https://www.rottentomatoes.com/search?search=<%=movieTitle %>">
+                      <img
+                        class="rating-image"
+                        src="/images/rotten.png"
+                        alt="IMDB"
+                      />
+                    </a>
                   </h5>
                   <p class="rating-text card-text"><%=rottenRating%></p>
                 </div>
@@ -64,11 +68,13 @@
               <div class="rating-card card">
                 <div class="card-body">
                   <h5 class="card-title">
+                    <a href="https://www.metacritic.com/search/all/<%=moviePoster %>/results">
                     <img
                       class="rating-image"
                       src="/images/meta.png"
                       alt="IMDB"
                     />
+                  </a>
                   </h5>
                   <p class="rating-text card-text"><%=metacriticRating%></p>
                 </div>
@@ -79,7 +85,6 @@
       </div>
     </div>
   </div>
-  
 </div>
 
 <%- include ("partials/footer") %>
